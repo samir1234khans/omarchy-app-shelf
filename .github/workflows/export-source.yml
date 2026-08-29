@@ -1,0 +1,26 @@
+name: Export App Shelf source
+
+on:
+  push:
+    branches:
+      - feat/complete-app-shelf-v1
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@v4
+      - name: Upload source snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: omarchy-app-shelf-source-${{ github.sha }}
+          path: |
+            .
+            !.git
+          include-hidden-files: true
+          retention-days: 1
