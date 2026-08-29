@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.coverage
+.DS_Store
+*.swp
+.env
+.env.*
+!.env.example
+build/
+dist/
+.local-test/
