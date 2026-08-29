@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.samir1234khans.appshelf",
+  "name": "App Shelf",
+  "version": "0.9.0",
+  "author": "Samir Khan",
+  "description": "A dark, foldered application launcher and Vercel/GitHub web-app synchronizer for Omarchy Quattro.",
+  "kinds": [
+    "service",
+    "overlay",
+    "bar-widget"
+  ],
+  "keepLoaded": true,
+  "entryPoints": {
+    "service": "Service.qml",
+    "overlay": "Launcher.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "App Shelf",
+    "description": "Open App Shelf and view deployment sync status",
+    "category": "Launchers",
+    "allowMultiple": false,
+    "defaultSection": "left",
+    "defaults": {
+      "showCount": true
+    },
+    "schema": [
+      {
+        "key": "showCount",
+        "type": "boolean",
+        "label": "Show pending-review count"
+      }
+    ]
+  }
+}
