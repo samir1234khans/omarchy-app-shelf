@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "io.github.samir1234khans.appshelf",
   "name": "App Shelf",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "author": "Samir Khan",
   "description": "A dark, foldered application launcher and Vercel/GitHub web-app synchronizer for Omarchy Quattro.",
   "kinds": [

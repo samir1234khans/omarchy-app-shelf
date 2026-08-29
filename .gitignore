@@ -1,11 +1,13 @@
 __pycache__/
 *.py[cod]
+.pytest_cache/
 .coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
 .DS_Store
-*.swp
+*.log
 .env
 .env.*
 !.env.example
-build/
-dist/
-.local-test/
